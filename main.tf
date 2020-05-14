@@ -4,7 +4,7 @@ variable vpc_security_group_ids {
   type = list
 }
 variable identity {}
-variable web_count {2}
+variable web_count {}
 
 resource "aws_instance" "web" {
   ami                    = var.ami
